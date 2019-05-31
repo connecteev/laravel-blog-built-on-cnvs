@@ -1,3 +1,14 @@
+<p align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/cnvs/art/master/github-header.png" width="400">
+</p>
+
+## Introduction
+
+A [Laravel](https://laravel.com) publishing platform but on [Canvas](https://github.com/cnvs/canvas), a fully open source package to extend your application and get you up-and-running with a blog in just a few minutes. In addition to a distraction-free 
+writing experience, you can view monthly trends on your content, get insights into reader traffic and more!
+
+
 ## Quick and easy Installation
 
 1. Run
@@ -27,17 +38,14 @@ php artisan canvas:install (has been run)
 php artisan canvas:setup
 ```
 
-4. (Optional) To seed with Fake data (1 fake admin user, fake posts, tags, topics, etcee), run:
+4. (Optional) To seed with Fake data (1 fake admin user, fake posts, tags, topics, etc.), run:
 ```bash
 composer dump-autoload
 php artisan db:seed --class=CnvsFakeDataSeeder
 ```
 Note that this is NOT run by default when you run `php artisan db:seed`
 
-5. Run:
-```bash
-php artisan serve
-```
+5. Run `php artisan serve`
 
 6. (Optional) If you haven't used the seeder (see above) to create an admin user yet, you should do that now. Navigate your browser to /register to create an admin user.
 Then go to /login and log in to the CMS / Admin dashboard using your admin username and password (or username and password: `admin@gmail.com / admin1234` if you used the seeder)

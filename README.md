@@ -27,7 +27,7 @@ DB_PASSWORD=root
 ```bash
 php artisan migrate
 php artisan db:seed
-php artisan storage:link 
+php artisan storage:link
 ```
 > **NOTE:**
 You do NOT need to run these steps (from the cnvs documentation: https://github.com/cnvs/canvas):

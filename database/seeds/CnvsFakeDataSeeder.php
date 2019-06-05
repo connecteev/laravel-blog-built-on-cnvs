@@ -29,9 +29,9 @@ class CnvsFakeDataSeeder extends Seeder
       DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
       User::create([
-        'name' => 'Admin Account',
-        'email' =>'admin@gmail.com',
-        'password' => bcrypt('admin1234'),
+        'name' => env('ADMIN_NAME', 'Admin Account'),
+        'email' => env('ADMIN_EMAIL', 'admin@gmail.com'),
+        'password' => bcrypt(env('ADMIN_PASSWORD', '12345678')),
         'remember_token' => str_random(10),
         'email_verified_at' => '2019-05-30 18:15:41',
       ]);
